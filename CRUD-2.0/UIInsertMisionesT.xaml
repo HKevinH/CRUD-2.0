@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="CRUD_2._0.UIInsertMisionesT"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CRUD_2._0"
+             mc:Ignorable="d" d:DesignWidth="800" Height="159">
+    <Grid>
+        <Canvas Height="136" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment">
+            <Label x:Name="labelPjt" Content="IdPersonaje" Canvas.Left="240.22" Canvas.Top="43.7" FontFamily="Friz Quadrata TT" FontSize="20" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="labelMision" Content="IdMision" Canvas.Left="413.66" Canvas.Top="43.7" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Friz Quadrata TT" FontSize="20" RenderTransformOrigin="0.794,0.385"/>
+            <ComboBox x:Name="comboBoxIDPjt" Canvas.Left="240.22" Canvas.Top="83" Width="120"/>
+            <ComboBox x:Name="comboBoxIDMision" Canvas.Left="400" Canvas.Top="83" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="CRUD_2._0.UIInsertMisiones"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CRUD_2._0"
+             mc:Ignorable="d" d:DesignWidth="800" Height="223">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="231*"/>
+            <ColumnDefinition Width="169*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Height="225" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment" Grid.ColumnSpan="2">
+            <Label x:Name="labelNombre" Content="Nombre" Height="30" Canvas.Left="83.6" Canvas.Top="72" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" FontFamily="Friz Quadrata TT"/>
+            <Label x:Name="labelObjectivos" Content="Objectivos" Height="30" Canvas.Left="343.5" Canvas.Top="72" Width="113" FontSize="20" FontFamily="Friz Quadrata TT" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="labelRequisitos" Content="Requisitos" Height="30" Canvas.Left="598.4" Canvas.Top="72" Width="113" FontSize="20" FontFamily="Friz Quadrata TT" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="boxNombre" Canvas.Left="69.1" TextWrapping="Wrap" Canvas.Top="102" Width="120" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="boxObjectivos" Canvas.Left="340" TextWrapping="Wrap" Canvas.Top="102" Width="120" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="boxRequisitos" Canvas.Left="602.9" TextWrapping="Wrap" Canvas.Top="102" Width="120" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+
+    </Grid>
+</UserControl>

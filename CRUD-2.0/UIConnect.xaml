@@ -1,0 +1,63 @@
+﻿<Window x:Class="CRUD_2._0.UIConnect"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD_2._0"
+        mc:Ignorable="d"
+        Title="UIConnect" Height="839" Width="1176" Background="{x:Null}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="399*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush TileMode="Tile" Stretch="UniformToFill" ImageSource="/Background.jpg"/>
+        </Grid.Background>
+        <Rectangle Margin="10,8,963,2" Stroke="Black" Width="200"/>
+        <Rectangle Height="200" Margin="195,0,0,623" Stroke="Black" Width="978"/>
+        <Canvas Margin="-485,200,0,174" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" Width="488" Height="449" Grid.Column="1" RenderTransformOrigin="0.491,0.211">
+
+            <Button x:Name="Conect" Content="CONECTAR" Height="52" Canvas.Left="166.115" Canvas.Top="397" Width="268" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.55,1.34" Click="Conect_Click" BorderBrush="{x:Null}" Foreground="#FFB5B22C" FontFamily="Poppins" FontSize="16">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Images/gb_button_default.png" TileMode="Tile" Stretch="Fill"/>
+                </Button.Background>
+            </Button>
+            <Image x:Name="image1" RenderTransformOrigin="0.678,0.636" Source="/Images/sylvanas.png" Height="136" Canvas.Left="138.008" Canvas.Top="355" Width="117"/>
+            <Label x:Name="Username" Content="USUARIO" Canvas.Left="99" Background="{x:Null}" Foreground="#FFB5B22C" FontFamily="Poppins" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="33"/>
+            <Label x:Name="Password" Content="CONTRASEÑA" Canvas.Left="100.6" Canvas.Top="120.42" Background="{x:Null}" Foreground="#FFB5B22C" FontFamily="Poppins" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center" Width="178" Height="36"/>
+            <Label x:Name="Port" Content="PUERTO" Canvas.Left="99" Canvas.Top="211.07" Background="{x:Null}" Foreground="#FFB5B22C" FontFamily="Poppins" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.408,1.586" Height="30"/>
+            <Label x:Name="Server" Content="SERVIDOR" Canvas.Left="99" Canvas.Top="295.755" Background="{x:Null}" Foreground="#FFB5B22C" FontFamily="Poppins" FontSize="16" RenderTransformOrigin="0.408,1.586" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30"/>
+            <TextBox x:Name="userBox" Canvas.Left="99" TextWrapping="Wrap"  Canvas.Top="66.52" Width="106" BorderBrush="{x:Null}" Foreground="#FFB5B22C" FontFamily="Poppins" TextChanged="userBox_TextChanged" SelectionBrush="#FF64B7F9" HorizontalAlignment="Center" VerticalAlignment="Top" SelectionTextBrush="#FF109D7E" HorizontalContentAlignment="Center" Height="28">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="/Images/gb_button_default.png" Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="passBox" Canvas.Left="99" TextWrapping="Wrap"  Canvas.Top="156.42" Width="106" BorderBrush="{x:Null}" Foreground="#FFB5B22C" FontFamily="Poppins" HorizontalAlignment="Center" VerticalAlignment="Top" SelectionTextBrush="#FF109D7E" HorizontalContentAlignment="Center" Height="28">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="/Images/gb_button_default.png" Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="portBox" Canvas.Left="99" TextWrapping="Wrap"  Canvas.Top="243.87" Width="106" BorderBrush="{x:Null}" Foreground="#FFB5B22C" FontFamily="Poppins" HorizontalAlignment="Center" VerticalAlignment="Top" SelectionTextBrush="#FF109D7E" HorizontalContentAlignment="Center" Height="25">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="/Images/gb_button_default.png" Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="serverBox" Canvas.Left="99" TextWrapping="Wrap"  Canvas.Top="330.755" Width="106" BorderBrush="{x:Null}" Foreground="#FFB5B22C" FontFamily="Poppins" HorizontalAlignment="Center" VerticalAlignment="Top" SelectionTextBrush="#FF109D7E" HorizontalContentAlignment="Center" Height="28">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="/Images/gb_button_default.png" Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="databaseBox" Canvas.Left="318.4" TextWrapping="Wrap"  Canvas.Top="66.5" Width="106" BorderBrush="{x:Null}" Foreground="#FFB5B22C" FontFamily="Poppins" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.022,-0.38" SelectionTextBrush="#FF109D7E" HorizontalContentAlignment="Center" Height="28">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="/Images/gb_button_default.png" Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <Label x:Name="Database" Content="BASES DE DATOS" Canvas.Left="309.885" Background="{x:Null}" Foreground="#FFB5B22C" FontFamily="Poppins" FontSize="16" RenderTransformOrigin="0.408,1.586" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Canvas.Top="36.5"/>
+        </Canvas>
+        <Canvas Height="449" Margin="215,200,517,174">
+            <Image x:Name="image" Height="434" Canvas.Left="10" Canvas.Top="7.5" Width="429" HorizontalAlignment="Left" VerticalAlignment="Top" Source="/Images/tauren.png"/>
+        </Canvas>
+
+    </Grid>
+</Window>

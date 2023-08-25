@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="CRUD_2._0.UIInsertUsuarios"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CRUD_2._0"
+             mc:Ignorable="d" d:DesignWidth="800" Loaded="UserControl_Loaded" Height="169">
+    <Grid>
+        <Canvas>
+            <Label x:Name="txtTable1" Content="USUARIO" Canvas.Left="41.6" Canvas.Top="59.55" FontSize="20" FontFamily="Friz Quadrata TT" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="boxUser" Height="30" Canvas.Left="20" TextWrapping="Wrap" Canvas.Top="93.85" Width="180" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Text="{x:Null}"/>
+            <Label x:Name="txtTable2" Content="NOMBRE" Canvas.Left="259.17" Canvas.Top="59.55" FontSize="20" FontFamily="Friz Quadrata TT" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="boxName" Height="30" Canvas.Left="220" TextWrapping="Wrap" Canvas.Top="93.85" Width="180" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center"  Text="{x:Null}"/>
+            <Label x:Name="txtTable3" Content="CONTRASEÑA" Canvas.Left="623.63" Canvas.Top="59.55" FontSize="20" FontFamily="Friz Quadrata TT" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="boxPass" Height="30" Canvas.Left="610" TextWrapping="Wrap" Canvas.Top="93.85" Width="180" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center"  Text="{x:Null}"/>
+            <Label x:Name="textCorreo" Content="CORREO" Canvas.Left="459.887" Canvas.Top="59.55" FontSize="20" FontFamily="Friz Quadrata TT" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="boxMail" Height="30" Canvas.Left="418.067" TextWrapping="Wrap" Canvas.Top="93.85" Width="180" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center"  Text="{x:Null}"/>
+        </Canvas>
+
+    </Grid>
+</UserControl>

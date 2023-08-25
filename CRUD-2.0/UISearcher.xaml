@@ -1,0 +1,32 @@
+﻿<UserControl x:Name="userControl" x:Class="CRUD_2._0.UISearcher"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CRUD_2._0"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Width="850" Height="560">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="73*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="567*"/>
+            <ColumnDefinition Width="233*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="comboBoxInner" Margin="98,53,42,355" Background="{x:Null}" Height="30" Grid.Column="1" d:LayoutOverrides="HorizontalAlignment" Grid.Row="1" BorderBrush="{x:Null}" Foreground="Black"/>
+        <ComboBox x:Name="comboBoxFrom" Margin="276,54,107,354" Background="{x:Null}" Height="30" d:LayoutOverrides="HorizontalAlignment" Grid.Row="1" BorderBrush="{x:Null}" Foreground="Black"/>
+        <DataGrid x:Name="dataGridFilter" d:ItemsSource="{d:SampleData ItemCount=5}" Height="209" Margin="276,108,50,120" d:LayoutOverrides="VerticalAlignment" Grid.ColumnSpan="2" Grid.Row="1" BorderBrush="#FFC5AD38"/>
+        <Label x:Name="label" Content="Columnas" Margin="114,69,361,337" FontFamily="Friz Quadrata TT" FontSize="20" Grid.Row="1"/>
+        <Label x:Name="label_Copy" Content="Tabla" Margin="336,28,167,378" FontFamily="Friz Quadrata TT" FontSize="20" Grid.Row="1"/>
+        <Label x:Name="label_Copy1" Content="Inner Join" Margin="39,23,92,385" FontFamily="Friz Quadrata TT" FontSize="20" Grid.Column="1" d:LayoutOverrides="HorizontalAlignment" Grid.Row="1"/>
+        <Button x:Name="btnBuscar" FontFamily="Friz Quadrata TT" FontSize="20" Height="100" Width="310" d:LayoutOverrides="HorizontalAlignment" Margin="245,328,12,10" Content="BUSCAR" BorderBrush="{x:Null}" Foreground="#FFFFE500" Click="btnBuscar_Click" RenderTransformOrigin="0.822,0.463" Grid.Row="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/gb_button_default.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+        <ListBox x:Name="listBoxCol" Margin="70,108,317,298" Width="180" FontFamily="Friz Quadrata TT" SelectionMode="Multiple" Grid.Row="1" Background="{x:Null}" Foreground="Black"/>
+        <ComboBox x:Name="comboBoxInnerTa" Margin="516,54,-42,354" Background="{x:Null}" Height="30" Grid.Row="1" Foreground="Black"/>
+    </Grid>
+</UserControl>

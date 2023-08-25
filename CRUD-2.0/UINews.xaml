@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="CRUD_2._0.UINews"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CRUD_2._0"
+             mc:Ignorable="d" Width="877" Height="530">
+    <Grid Width="877" Height="533">
+        <Label x:Name="label" Content="&#xA;¡Bienvenido al Sistema de Gestión de Datos!&#xA;&#xA;Este sistema te permite realizar operaciones de creación, lectura, actualización&#xA;y eliminación de registros en nuestra base de datos. A través de una interfaz sencilla&#xD;&#xA; y amigable, podrás gestionar la información de tus elementos favoritos sin importar&#xD;&#xA; su categoría.&#xA;&#xA;Explora las diferentes opciones disponibles para agregar nuevos registros, &#xD;&#xA;buscar información detallada, actualizar datos existentes y eliminar elementos de manera &#xD;&#xA;segura. Nuestro sistema te brinda el control total sobre tu colección,&#xA;permitiéndote administrar tu propio catálogo de manera eficiente.&#xA;&#xA;¡Disfruta de la experiencia de gestionar tus elementos&#xA;con nuestro sistema de gestión de datos!" FontFamily="Friz Quadrata TT" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Height="316" d:LayoutOverrides="LeftPosition, RightPosition"/>
+    </Grid>
+</UserControl>
